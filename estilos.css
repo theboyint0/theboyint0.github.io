@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffecf2;
+}
+
+.contenedor {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6b6b;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+#corazones {
+    margin: 15px 0;
+}
+
+.corazon {
+    width: 15px;
+    height: 15px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    position: relative;
+    animation: corazonesAnimacion 1.5s infinite alternate;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e05a5a;
+}
+
+.oculto {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas de hasta 600px de ancho */
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #corazones {
+        margin: 10px 0;
+    }
+
+    .corazon {
+        width: 12px;
+        height: 12px;
+        margin: 0 2px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+@keyframes corazonesAnimacion {
+    to {
+        transform: scale(1.2);
+        background-color: #e05a5a;
+    }
+}
+
+
+
+
